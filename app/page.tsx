@@ -22,13 +22,14 @@ const gradientOverlay = {
 export default function Component() {
   useEffect(() => {
     // IBM Watson Assistant integration
-    window.watsonAssistantChatOptions = {
+    const watsonAssistantChatOptions: WatsonAssistantChatOptions= {
       integrationID: "57dcc54f-e9ec-458f-907d-d07d6fa6a51e",
       region: "us-east",
       serviceInstanceID: "f9e77fa5-b157-4ea9-bd4d-a42f494e1d87",
       onLoad: async (instance) => { await instance.render(); }
     };
     
+    window.watsonAssistantChatOptions = watsonAssistantChatOptions;
     const script = document.createElement('script');
     script.src = `https://web-chat.global.assistant.watson.appdomain.cloud/versions/${window.watsonAssistantChatOptions.clientVersion || 'latest'}/WatsonAssistantChatEntry.js`;
     document.head.appendChild(script);
