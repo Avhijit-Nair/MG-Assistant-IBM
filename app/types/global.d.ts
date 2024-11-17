@@ -12,4 +12,4 @@ interface WatsonAssistantChatOptions {
     }
   }
   
-  export {};
+  export {WatsonAssistantChatOptions};

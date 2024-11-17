@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-
+import {WatsonAssistantChatOptions} from "./types/global"
 const parallaxStyle = {
   backgroundImage: "url('data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M100 0v100H0V0c12.5 0 12.5 20 25 20s12.5-20 25-20 12.5 20 25 20 12.5-20 25-20z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E')",
   backgroundAttachment: 'fixed',
