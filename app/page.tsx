@@ -1,5 +1,6 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect} from 'react'
+import React from 'react';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {WatsonAssistantChatOptions} from "./types/global"
@@ -9,7 +10,7 @@ const parallaxStyle = {
   backgroundSize: '100px 100px',
 };
 
-const gradientOverlay = {
+const gradientOverlay : React.CSSProperties = {
   background: 'linear-gradient(to bottom, rgba(17,7,46,0) 0%, rgba(3,84,233,0.5) 75%, rgba(17,7,46,1) 100%)',
   position: 'fixed',
   bottom: 0,
